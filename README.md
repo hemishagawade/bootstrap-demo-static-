@@ -1,31 +1,31 @@
 # MyStore Static Web Application (Bootstrap Demo)
 This is a static web apaplication. Below is an overview of the pages included in this web application:
 
-Home Page (home.html):
+1.Home Page (home.html):
 
 This page contains information related to products.
 
-About Us Page (aboutus.html):
+2.About Us Page (aboutus.html):
 
 Provides information about the company.
 
-Contact Page (contact.html):
+3.Contact Page (contact.html):
 
 Contains contact information of the company.
 
-My Cart Page (mycart.html):
+4.Cart Page (mycart.html):
 
 Displays the contents of the user's shopping cart.
 
-Place Orders Page (placeorders.html):
+5. Orders Page (placeorders.html):
 
-Allows users to place orders.
+Displays the contents of the user's previous history of orders.
 
-Register Page (register.html):
+6. Register Page (register.html):
 
 Provides a registration form for new users.
 
-Login Page (login.html):
+7. Login Page (login.html):
 
 Offers a login form for existing users.
 
