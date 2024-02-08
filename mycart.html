@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Cart</title>
+        <!-- botstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <style>
+          a{
+            text-decoration: none;
+          }
+          img{
+            height: 217px;
+            width: 180px;
+          }
+          
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- start of row 1 hedaer/navbar -->
+            <nav class="navbar navbar-expand-lg bg-dark m-2" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">MyStore</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="col-10">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="mycart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="placeorder.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact US</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-2">
+                      <div class="row">
+                        <ul class="navbar-nav ">
+                          <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">/</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="login.html">login</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <!-- end of row 1/ hedaer/navbar -->
+
+            <!-- row 2 started  -->
+              <div class="row" >
+                <!-- row2 column 1 started -->
+                <div class="col-3 p-4 bg-body-secondary" >
+                    <h5>Filter Products By category</h5>
+                    <a href="">All</a><br>
+                    <a href="">Category 1</a><br>
+                    <a href="">Category 2</a><br>
+                    <a href="">Category 3</a><br>
+                    <hr>
+                    <h5>Sort By Price</h5>
+                    <a href="">Low to High</a><br>
+                    <a href="">High To Low</a>
+                    <hr>
+                    <h5>Search products by Price</h5>
+                    <form class="row g-3">
+                      <div class="col-auto">
+                        <label  >From:</label>
+                        <input type="text"  class="form-control" >
+                      </div><br>
+                      <div class="col-auto">
+                        <label  >To:</label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="col-auto mx-auto" style="width: 100%;">
+                        <input type="submit" class="btn btn-dark" value="Search" style="width: 87%;"></input>
+                      </div>
+                    </form>
+                </div>
+                <!-- row2 column 1 end -->
+
+                <!-- row2 column 2 started -->
+                <div class="col-9 px-5" >
+                  <div class="row mb-2">
+                    <h1><i class="bi bi-cart3"></i>&nbsp;&nbsp;My Cart</h1>
+                  </div>
+
+                  <div class="row">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Product</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Quantity</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- product 1 -->
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <img src="assets/images/headphones.png" alt="Product" class="product-img">
+                            <b>Headphones</b>
+                          </td>
+                          <td>&#8377;1750/-</td>
+                          <td>
+                            <input type="number" value="2" min="1" class="form-control">
+                          </td>
+                          <td>&#8377;3500/-</td>
+                        </tr>
+                        <!-- product 2 -->
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>
+                            <img src="assets/images/laptop.jpg" alt="Product" class="product-img">
+                            <b>laptop</b>
+                          </td>
+                          <td>&#8377;79000/-</td>
+                          <td>
+                            <input type="number" value="1" min="1" class="form-control">
+                          </td>
+                          <td>&#8377;79000/-</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <th colspan="5" class="text-end">&#8377;82500/-</th>
+                      </tfoot>
+                    </table>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a href="home.html" class="btn btn-secondary">Continue Shopping</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <button class="btn btn-danger">Clear Cart</button>
+                      <button class="btn btn-primary">Update Cart</button>
+                      <button class="btn btn-success">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!-- row2 column 2 end -->
+              </div> 
+            <!-- end of row 2 -->
+              
+            <!-- start of row 3 footer  -->
+              <div class="row m-2" >
+                  <hr>
+                  <div class="col-4">
+                    <p> <i class="bi bi-geo-alt-fill"></i><b><big>MyStore</big></b><br>
+                      2nd Floor, Ishaan Arcade-1, Opposite Gaondevi Mandir, Above Canara bank, Gokhale Road, Landmark: 3 Buildings after McDonalds, Thane(W)-400602</p>
+                  </div>
+                  <div class="col-4">
+                    <h4>Curious to explore MyStore?</h4>
+                     <a href="aboutus.html">Know About Us</a>  <br>
+                     <a href="contact.html">Locate Us</a>
+                  </div>
+                  <div class="col-4">
+                    <h6>Feel free to connect with us</h6>
+                    <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;9123456789<br>
+                    <i class="bi bi-envelope"></i>&nbsp;&nbsp;mystore_office@gmail.com <br>
+                    <i class="bi bi-whatsapp"></i>&nbsp;&nbsp;9123456789<br>
+                    <i class="bi bi-linkedin"></i>&nbsp;&nbsp;MyStore_Biz<br>
+                    <i class="bi bi-facebook"></i>&nbsp;&nbsp;MyStore Online<br>
+                    <i class="bi bi-twitter"></i>&nbsp;&nbsp;mystorebizzz<br>
+                  </div>
+              </div>
+            <!-- end of row 3 footer  -->    
+        </div>
+        
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+</html>
